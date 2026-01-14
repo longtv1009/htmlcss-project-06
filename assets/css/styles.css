@@ -1,0 +1,62 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5d3bee;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Common */
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-heading {
+    color: #080415;
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.6rem;
+    line-height: 1.63;
+}
+
+.btn {
+    --height: 55px;
+
+    display: inline-block;
+    min-width: 147px;
+
+    background: var(--primary-color);
+
+    color: #fdfdfd;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: var(--height);
+}

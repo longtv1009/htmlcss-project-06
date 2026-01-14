@@ -99,5 +99,135 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body></body>
+    <body style="height: 1000px">
+        <!-- PC Header -->
+        <header class="header header--fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header__inner">
+                            <!-- Mobile Menu -->
+                            <label for="menu-checkbox" class="toggle-menu">
+                                <div class="toggle-menu__wrap">
+                                    <span class="toggle-menu__icon"></span>
+                                    <span class="toggle-menu__icon"></span>
+                                </div>
+                            </label>
+
+                            <div class="header__email-wrap">
+                                <div class="header__img-wrap">
+                                    <a href="mailto:hi@arif.interactive">
+                                        <img
+                                            src="./assets/img/mail.svg"
+                                            alt=""
+                                            class="header__img-email"
+                                        />
+                                    </a>
+                                </div>
+                                <a
+                                    href="mailto:hi@arif.interactive"
+                                    class="header__email"
+                                >
+                                    hi@arif.interactive
+                                </a>
+                            </div>
+
+                            <!-- Logo -->
+                            <a href="#">
+                                <picture>
+                                    <source
+                                        media="(max-width: 991.98px)"
+                                        srcset="./assets/img/logo-small.svg"
+                                    />
+                                    <img
+                                        src="./assets/img/logo.svg"
+                                        alt=""
+                                        class="header__logo"
+                                    />
+                                </picture>
+                            </a>
+
+                            <!-- Navigation -->
+                            <nav class="pc-navbar" id="pc-nav">
+                                <ul class="navbar__list">
+                                    <li class="navbar__item">
+                                        <a
+                                            href="#!"
+                                            class="navbar__link"
+                                            title="Projects"
+                                        >
+                                            Projects
+                                        </a>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a
+                                            href="#!"
+                                            class="navbar__link"
+                                            title="Journey"
+                                        >
+                                            Journey
+                                        </a>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a
+                                            href="#!"
+                                            class="navbar__link"
+                                            title="Service"
+                                        >
+                                            Service
+                                        </a>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a
+                                            href="#!"
+                                            class="navbar__link"
+                                            title="Contact"
+                                        >
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tablet/Mobile Header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu Content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#">
+                    <img src="./assets/img/logo-small.svg" alt="" />
+                </a>
+
+                <!-- Navigation -->
+                <ul class="mobile-nav" id="mobile-nav">
+                    <li><a href="#!">Projects</a></li>
+                    <li><a href="#!">Journey</a></li>
+                    <li><a href="#!">Service</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </div>
+            <script>
+                const pcNav = document.querySelector("#pc-nav");
+                const mobileNav = document.querySelector("#mobile-nav");
+
+                // Copy from PC Nav to Mobile Nav
+                mobileNav.innerHTML = pcNav.innerHTML;
+            </script>
+        </header>
+    </body>
 </html>

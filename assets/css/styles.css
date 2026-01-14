@@ -50,13 +50,140 @@ a {
 
     display: inline-block;
     min-width: 147px;
-
     background: var(--primary-color);
-
     color: #fdfdfd;
-
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
     line-height: var(--height);
+}
+
+/* Header */
+.header {
+    background: #fbfaff;
+}
+
+.header.header--fixed {
+    position: sticky;
+    top: -4px;
+    left: 0;
+}
+
+.header__inner,
+.toggle-menu__wrap,
+.header__email-wrap,
+.header__img-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header__inner {
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 20px 0 16px;
+}
+
+.header__inner::after {
+    position: absolute;
+    bottom: 0;
+    left: -13px;
+    display: block;
+    content: "";
+    width: calc(100% + 27px);
+    height: 1px;
+    background: #d6d3e2;
+}
+
+.toggle-menu__wrap,
+.header__img-wrap {
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+    border-radius: 50%;
+}
+
+.toggle-menu__wrap {
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.toggle-menu__icon {
+    width: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 99px;
+}
+
+.header__email-wrap {
+    margin: 0 10px 0 auto;
+    column-gap: 10px;
+}
+
+.header__img-email {
+    width: 16px;
+    height: 12px;
+}
+
+.header__email {
+    display: none;
+}
+
+.header__email:hover {
+    color: var(--primary-color);
+}
+
+.header__logo {
+    display: block;
+}
+
+.pc-navbar {
+    display: none;
+}
+
+.menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+}
+
+.menu-drawer {
+    position: fixed;
+    inset: 0 25% 0 0;
+    padding: 30px;
+    background: #fbfaff;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+
+.mobile-nav {
+    margin-top: 16px;
+}
+
+.navbar__link {
+    display: block;
+    padding: 14px 0;
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.mobile-nav__link {
+    /* display: block;
+    padding: 14px 0;
+    color: #51586a;
+    font-weight: 500; */
 }

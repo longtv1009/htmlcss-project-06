@@ -3,7 +3,7 @@
 .container,
 .container-fluid {
     --column-size: 12;
-    --spacer: 10px;
+    --spacer: 40px;
 
     width: 100%;
     margin-left: auto;
@@ -682,7 +682,7 @@
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     .container {
-        max-width: 1320px;
+        max-width: 1330px;
     }
 
     .g-xxl-0 {

@@ -24,6 +24,11 @@
         line-height: 1.18;
     }
 
+    .section-heading-small {
+        font-size: 3.2rem;
+        line-height: 1.25;
+    }
+
     .section-desc {
         font-size: 1.8rem;
         line-height: 1.67;
@@ -285,6 +290,72 @@
     .clients-item:nth-child(4),
     .clients-item:nth-child(8) {
         padding-left: 0;
+    }
+
+    /* Service */
+    .service {
+        margin-top: 133px;
+        scroll-margin-top: 150px;
+    }
+
+    .service__info {
+        text-align: center;
+    }
+
+    .service__desc {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service__list {
+        margin-top: 60px;
+    }
+
+    .service-row {
+        overflow-x: visible;
+    }
+
+    .service-item {
+        padding: 33px 42px 32px 43px;
+        background: #fbfaff;
+        transition: 0.5s ease;
+    }
+
+    .service-item:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .service-item__img-wrap:hover {
+        border-color: var(--primary-color);
+    }
+
+    .service-item__heading:hover {
+        color: var(--primary-color);
+    }
+
+    .service-item__img-wrap {
+        width: 74px;
+        height: 74px;
+        transition: 0.5s ease;
+    }
+
+    .service-item__img {
+        display: block;
+        width: auto;
+    }
+
+    .service-item__heading {
+        margin-top: 22px;
+        transition: 0.5s ease;
+    }
+
+    .service-item__desc {
+        margin-top: 15px;
+    }
+
+    .service__dots {
+        display: none;
     }
 }
 

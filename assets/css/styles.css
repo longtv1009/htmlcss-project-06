@@ -17,6 +17,11 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* Common */
 input,
 textarea,
@@ -35,6 +40,14 @@ a {
     font-size: 3.6rem;
     font-weight: 500;
     line-height: 1.17;
+    letter-spacing: -0.04em;
+}
+
+.section-heading-small {
+    color: #080415;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.23;
     letter-spacing: -0.04em;
 }
 
@@ -417,4 +430,87 @@ a {
 .client-item__logo,
 .client-item__logo-name {
     display: block;
+}
+
+/* Service */
+.service {
+    margin-top: 120px;
+    scroll-margin-top: 180px;
+}
+
+.service__info {
+    text-align: center;
+}
+
+.service__list {
+    margin-top: 100px;
+}
+
+.service-row {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.service-item {
+    padding: 29px 50px;
+    background: #fbfaff;
+}
+
+.service-item__img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(8, 4, 21, 0.05);
+    border-radius: 50%;
+    background: #fff;
+}
+
+.service-item__img {
+    width: 32px;
+}
+
+.service-item__heading {
+    display: block;
+    margin-top: 30px;
+}
+
+.service__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+}
+
+.service__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(8, 4, 21, 0.2);
+}
+
+.service__dot:hover:not(.service__dot--active) {
+    cursor: pointer;
+}
+
+.service__dot--active {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    cursor: default;
+}
+
+.service__dot--active::before {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
 }

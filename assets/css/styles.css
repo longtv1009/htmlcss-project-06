@@ -190,6 +190,10 @@ a {
     margin-top: 16px;
 }
 
+.navbar__item {
+    border-bottom: 1px solid #d6d3e2;
+}
+
 .navbar__link {
     display: block;
     padding: 14px 0;
@@ -315,4 +319,102 @@ a {
 
 .hero__decor--right {
     display: none;
+}
+
+/* Clients */
+.clients {
+    margin-top: 120px;
+}
+
+.clients__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.clients__heading {
+    position: relative;
+    width: 49%;
+    margin: 0 auto;
+    color: #080415;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.04em;
+}
+
+.clients__heading::before {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    content: "";
+    width: 48px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.clients__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 34px;
+}
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.clients-item:nth-child(4),
+.clients-item:nth-child(8) {
+    padding-left: 36px;
+}
+
+.client-item__logo-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.clients-item:nth-child(1) > .client-item__logo-group {
+    background: #fff;
+}
+
+.clients-item:nth-child(2) > .client-item__logo-group {
+    background: #fbfaff;
+}
+
+.clients-item:nth-child(3) > .client-item__logo-group {
+    background: #fee101;
+}
+
+.clients-item:nth-child(4) > .client-item__logo-group {
+    background: #f00;
+}
+
+.clients-item:nth-child(5) > .client-item__logo-group {
+    background: #14a800;
+}
+
+.clients-item:nth-child(6) > .client-item__logo-group {
+    background: #fff;
+}
+
+.clients-item:nth-child(7) > .client-item__logo-group {
+    background: #7f54b3;
+}
+
+.clients-item:nth-child(8) > .client-item__logo-group {
+    background: #23bfc8;
+}
+
+.client-item__logo,
+.client-item__logo-name {
+    display: block;
 }

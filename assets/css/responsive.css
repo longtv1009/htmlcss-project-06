@@ -357,6 +357,89 @@
     .service__dots {
         display: none;
     }
+
+    /* Projects */
+    .projects {
+        margin-top: 140px;
+    }
+
+    .project__inner {
+        padding: 86px 0;
+    }
+
+    .project__info {
+        flex-direction: row;
+        column-gap: 160px;
+        text-align: left;
+    }
+
+    .project__heading {
+        width: 40%;
+    }
+
+    .project__desc {
+        margin-top: 31px;
+        width: 31.63%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .project__list {
+        margin-top: 70px;
+        padding-top: 0;
+    }
+
+    .project-item {
+        padding: 24px 23px 23px 34px;
+    }
+
+    .project-item__content {
+        column-gap: 44px;
+    }
+
+    .project-item__heading {
+        transition: 0.5s ease;
+    }
+
+    .project-item__heading:hover,
+    .project-item__link:hover {
+        color: var(--primary-color);
+    }
+
+    .project-item__desc {
+        margin-top: 10px;
+        font-size: 1.6rem;
+        line-height: 1.44;
+    }
+
+    .project-item__link {
+        margin-top: 20px;
+        font-size: 1.8rem;
+        line-height: 1.67;
+        transition: 0.5s ease;
+    }
+
+    .project-item__media {
+        width: 48%;
+    }
+
+    .project-item__img:hover {
+        transform: scale(1.2);
+    }
+
+    .project__action {
+        margin-top: 80px;
+    }
+
+    .project__btn {
+        background: #fff;
+        color: #080415;
+        transition: 0.5s ease;
+    }
+
+    .project__btn:hover {
+        opacity: 1;
+        color: var(--primary-color);
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */

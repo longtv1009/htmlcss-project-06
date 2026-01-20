@@ -612,3 +612,127 @@ a {
     background: #fff;
     color: #080415;
 }
+
+/* Journey */
+.journey {
+    margin-top: 120px;
+    scroll-margin-top: 100px;
+}
+
+.journey__info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.journey__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+}
+
+.journey__greeting {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: -0.04em;
+}
+
+.journey__img-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.journey__heading {
+    margin-top: 10px;
+}
+
+.journey__stats {
+    display: flex;
+    column-gap: 50px;
+    padding: 30px 16px;
+    margin: 50px 0 40px;
+    border-top: 1px solid rgba(8, 4, 21, 0.2);
+    border-bottom: 1px solid rgba(8, 4, 21, 0.2);
+}
+
+.journey__stats-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.journey__stats-number {
+    color: #080415;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+}
+
+.journey__stats-desc {
+    margin-top: 5px;
+    line-height: 1.38;
+}
+
+.journey__video-container {
+    position: relative;
+}
+
+.journey__video {
+    display: block;
+    width: 100%;
+    height: 276px;
+    object-fit: cover;
+}
+
+.journey__video-play,
+.journey__video-intro {
+    position: absolute;
+}
+
+.journey__video-play {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 77px;
+    padding: 0;
+    border-radius: 50%;
+    border: transparent;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+}
+
+.journey__video-play:hover .journey__video-play-icon {
+    color: #080415;
+}
+
+.journey__video-play-icon {
+    width: 10.405px;
+}
+
+.journey__video-intro {
+    right: 10px;
+    bottom: 10px;
+    width: 33.7%;
+    padding: 7px 21px;
+    background: #fff;
+}
+
+.journey__video-intro-desc {
+    display: block;
+    color: #51586a;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5;
+    text-transform: uppercase;
+}

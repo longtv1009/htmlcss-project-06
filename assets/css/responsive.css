@@ -396,10 +396,6 @@
         column-gap: 44px;
     }
 
-    .project-item__heading {
-        transition: 0.5s ease;
-    }
-
     .project-item__heading:hover,
     .project-item__link:hover {
         color: var(--primary-color);
@@ -415,7 +411,6 @@
         margin-top: 20px;
         font-size: 1.8rem;
         line-height: 1.67;
-        transition: 0.5s ease;
     }
 
     .project-item__media {
@@ -439,6 +434,70 @@
     .project__btn:hover {
         opacity: 1;
         color: var(--primary-color);
+    }
+
+    /* Journey */
+    .journey {
+        margin-top: 140px;
+        scroll-margin-top: 120px;
+    }
+
+    .journey__info {
+        width: 49%;
+    }
+
+    .journey__label {
+        column-gap: 9px;
+    }
+
+    .journey__desc {
+        margin-top: 15px;
+    }
+
+    .journey__stats {
+        justify-content: space-between;
+        padding: 20px 143px 20px 95px;
+        margin: 70px 112px;
+    }
+
+    .journey__stats-number {
+        font-size: 5.6rem;
+        line-height: 1.36;
+    }
+
+    .journey__stats-desc {
+        margin-top: 0;
+    }
+
+    .journey__video {
+        height: 628px;
+    }
+
+    .journey__video-play {
+        width: 111px;
+        height: 111px;
+    }
+
+    .journey__video-play:hover {
+        border: 3px solid rgba(93, 59, 238, 0.8);
+    }
+
+    .journey__video-play-icon {
+        width: 15px;
+    }
+
+    .journey__video-intro {
+        width: 15%;
+        padding: 16px 28px;
+    }
+
+    .journey__video-intro:hover .journey__video-intro-desc {
+        color: var(--primary-color);
+    }
+
+    .journey__video-intro-desc {
+        font-size: 1.8rem;
+        line-height: 1.67;
     }
 }
 

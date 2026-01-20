@@ -235,16 +235,19 @@
         width: 16px;
     }
 
-    .hero__decor {
+    .hero__decor,
+    .feedback__decor {
         position: absolute;
         bottom: 0;
     }
 
-    .hero__decor--left {
+    .hero__decor--left,
+    .feedback__decor-left {
         left: -214px;
     }
 
-    .hero__decor--right {
+    .hero__decor--right,
+    .feedback__decor-right {
         display: block;
         right: -160px;
     }
@@ -498,6 +501,54 @@
     .journey__video-intro-desc {
         font-size: 1.8rem;
         line-height: 1.67;
+    }
+
+    /* Feedback */
+    .feedback__inner {
+        padding: 150px 0 74px;
+    }
+
+    .feedback__info {
+        width: 49%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feedback__list {
+        width: 58%;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feedback-item__quote {
+        font-size: 2.4rem;
+    }
+
+    .feedback-item__info {
+        margin-top: 36px;
+    }
+
+    .feedback-item__name {
+        font-size: 3rem;
+        line-height: 1.33;
+    }
+
+    .feedback__dots {
+        margin-top: 40px;
+    }
+
+    .feedback__decor {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .feedback__decor-left {
+        left: -174px;
+    }
+
+    .feedback__decor-right {
+        right: -174px;
     }
 }
 

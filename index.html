@@ -94,6 +94,14 @@
             rel="stylesheet"
         />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -872,11 +880,24 @@
                             class="journey__video"
                         ></video>
                         <button class="journey__video-play">
-                            <img
+                            <!-- <img
                                 src="./assets/img/journey-video-play.svg"
                                 alt=""
                                 class="journey__video-play-icon"
-                            />
+                            /> -->
+                            <svg
+                                class="journey__video-play-icon"
+                                width="15"
+                                height="18"
+                                viewBox="0 0 15 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M14.4462 10.6965C14.3614 10.7835 14.0414 11.1555 13.7433 11.4615C11.9956 13.386 7.43643 16.536 5.05017 17.4975C4.68777 17.652 3.77155 17.979 3.28203 18C2.81296 18 2.36581 17.892 1.93911 17.673C1.40721 17.367 0.980516 16.8855 0.746712 16.317C0.596201 15.9225 0.362397 14.742 0.362397 14.721C0.128592 13.4295 0 11.331 0 9.012C0 6.8025 0.128592 4.7895 0.320019 3.4785C0.341939 3.4575 0.575743 1.9905 0.831466 1.488C1.30054 0.57 2.21676 0 3.19727 0H3.28203C3.9206 0.0225 5.26352 0.5925 5.26352 0.6135C7.52119 1.5765 11.9752 4.572 13.7652 6.5625C13.7652 6.5625 14.2694 7.074 14.4886 7.3935C14.8305 7.8525 15 8.421 15 8.9895C15 9.624 14.8086 10.215 14.4462 10.6965Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
                         </button>
                         <div class="journey__video-intro">
                             <a href="#!">
@@ -1060,6 +1081,344 @@
                             alt=""
                             class="feedback__decor feedback__decor-right"
                         />
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq">
+                <div class="container faq__container">
+                    <div class="faq__inner">
+                        <h2 class="section-heading faq__heading">
+                            A few questions
+                            <span class="break-word">
+                                clients normally ask me
+                            </span>
+                        </h2>
+
+                        <div class="faq__list">
+                            <!-- Question Item 1 -->
+                            <dic class="faq-item__wrap">
+                                <input
+                                    type="checkbox"
+                                    name="faq-item__checkbox"
+                                    id="faq-item__checkbox-1"
+                                    class="faq-item__checkbox"
+                                    hidden
+                                />
+                                <div class="faq-item">
+                                    <section class="faq-item__info">
+                                        <h3
+                                            class="section-heading-small faq-item__heading"
+                                        >
+                                            What is your hourly rate?
+                                        </h3>
+                                        <p class="section-desc faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </section>
+                                    <label
+                                        for="faq-item__checkbox-1"
+                                        class="faq-item__checkbox-icon"
+                                    >
+                                        <svg
+                                            class="faq-item__checkbox-icon-plus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                d="M7.04199 14.084V0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                        <svg
+                                            class="faq-item__checkbox-icon-minus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </dic>
+
+                            <!-- Question Item 2 -->
+                            <div class="faq-item__wrap">
+                                <input
+                                    type="checkbox"
+                                    name="faq-item__checkbox"
+                                    id="faq-item__checkbox-2"
+                                    class="faq-item__checkbox"
+                                    hidden
+                                />
+                                <div class="faq-item">
+                                    <section class="faq-item__info">
+                                        <h3
+                                            class="section-heading-small faq-item__heading"
+                                        >
+                                            What type of projects do you take
+                                            on?
+                                        </h3>
+                                        <p class="section-desc faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </section>
+                                    <label
+                                        for="faq-item__checkbox-2"
+                                        class="faq-item__checkbox-icon"
+                                    >
+                                        <svg
+                                            class="faq-item__checkbox-icon-plus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                d="M7.04199 14.084V0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                        <svg
+                                            class="faq-item__checkbox-icon-minus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Question Item 3 -->
+
+                            <div class="faq-item__wrap">
+                                <input
+                                    type="checkbox"
+                                    name="faq-item__checkbox"
+                                    id="faq-item__checkbox-3"
+                                    class="faq-item__checkbox"
+                                    hidden
+                                />
+                                <div class="faq-item">
+                                    <section class="faq-item__info">
+                                        <h3
+                                            class="section-heading-small faq-item__heading"
+                                        >
+                                            How do you charge for projects ?
+                                        </h3>
+                                        <p class="section-desc faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </section>
+                                    <label
+                                        for="faq-item__checkbox-3"
+                                        class="faq-item__checkbox-icon"
+                                    >
+                                        <svg
+                                            class="faq-item__checkbox-icon-plus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                d="M7.04199 14.084V0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                        <svg
+                                            class="faq-item__checkbox-icon-minus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Question Item 4 -->
+                            <div class="faq-item__wrap">
+                                <input
+                                    type="checkbox"
+                                    name="faq-item__checkbox"
+                                    id="faq-item__checkbox-4"
+                                    class="faq-item__checkbox"
+                                    hidden
+                                />
+                                <div class="faq-item">
+                                    <section class="faq-item__info">
+                                        <h3
+                                            class="section-heading-small faq-item__heading"
+                                        >
+                                            What time-zone do you work in?
+                                        </h3>
+                                        <p class="section-desc faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </section>
+                                    <label
+                                        for="faq-item__checkbox-4"
+                                        class="faq-item__checkbox-icon"
+                                    >
+                                        <svg
+                                            class="faq-item__checkbox-icon-plus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                d="M7.04199 14.084V0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                        <svg
+                                            class="faq-item__checkbox-icon-minus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Question Item 5 -->
+                            <div class="faq-item__wrap">
+                                <input
+                                    type="checkbox"
+                                    name="faq-item__checkbox"
+                                    id="faq-item__checkbox-5"
+                                    class="faq-item__checkbox"
+                                    hidden
+                                />
+                                <div class="faq-item">
+                                    <section class="faq-item__info">
+                                        <h3
+                                            class="section-heading-small faq-item__heading"
+                                        >
+                                            How often can we communicate?
+                                        </h3>
+                                        <p class="section-desc faq-item__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </section>
+                                    <label
+                                        for="faq-item__checkbox-5"
+                                        class="faq-item__checkbox-icon"
+                                    >
+                                        <svg
+                                            class="faq-item__checkbox-icon-plus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                            <path
+                                                d="M7.04199 14.084V0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                        <svg
+                                            class="faq-item__checkbox-icon-minus"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.084 7.04199H0"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                            />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -598,6 +598,33 @@
         width: 15px;
         height: 15px;
     }
+
+    /* Atmosphere */
+    .atmosphere {
+        margin-top: 160px;
+    }
+
+    .atmosphere__info {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .atmosphere__mail {
+        margin-top: 30px;
+    }
+
+    .atmosphere__list {
+        margin-top: 70px;
+    }
+
+    .atmosphere__img {
+        height: 529px;
+    }
+
+    .atmosphere__dots {
+        display: none;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */

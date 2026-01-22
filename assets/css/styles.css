@@ -918,3 +918,52 @@ a {
     visibility: visible;
     cursor: pointer;
 }
+
+/* Atmosphere */
+.atmosphere {
+    margin-top: 120px;
+}
+
+.atmosphere__info {
+    text-align: center;
+}
+
+.atmosphere__mail {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.atmosphere__mail:hover {
+    text-decoration: underline;
+}
+
+.atmosphere__list {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.atmosphere__row {
+    flex-wrap: nowrap;
+}
+
+.atmosphere__item {
+    overflow: hidden;
+}
+
+.atmosphere__item:hover .atmosphere__img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.atmosphere__img {
+    display: block;
+    width: 100%;
+    height: 503px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.atmosphere__dots {
+    margin-top: 40px;
+}

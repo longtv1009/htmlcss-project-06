@@ -931,13 +931,13 @@ a {
     text-align: center;
 }
 
-.atmosphere__mail {
+.atmosphere__instagram {
     display: inline-block;
     margin-top: 10px;
     color: var(--primary-color);
 }
 
-.atmosphere__mail:hover {
+.atmosphere__instagram:hover {
     text-decoration: underline;
 }
 
